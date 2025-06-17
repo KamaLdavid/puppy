@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Happy Birthday</title>
     <link rel="stylesheet" href="style.css">
     <style>
         .birthday-text {
             position: absolute;
-            top: 20px;
+            top: 30px;
             width: 100%;
             text-align: center;
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: bold;
-            color: #ff69b4; /* pink */
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: bounce 2s ease-in-out infinite, fadeIn 2s ease-in-out forwards;
             z-index: 1000;
-            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
         }
 
         @keyframes fadeIn {
@@ -27,10 +38,10 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- 🎉 Happy Birthday Text -->
-        <div class="birthday-text">🎉 inga parunga naai kutty</div>
+        <!-- 🎉 Happy Birthday Animated Text -->
+        <div class="birthday-text">Sangeetha inga parunga naai kutty</div>
 
-        <!-- if you want to see the markers, remove d-none from them -->
+        <!-- Marker positions -->
         <div class="marker red d-none"></div>
         <div class="marker green d-none"></div>
         <div class="marker blue d-none"></div>
