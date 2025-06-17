@@ -4,46 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .birthday-text {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff69b4; /* pink */
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            z-index: 1000;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
- <div class="wrapper">
-            <!-- if you want to see the markers, remove d-none from them -->
+    <div class="wrapper">
+        <!-- 🎉 Happy Birthday Text -->
+        <div class="birthday-text">🎉 inga parunga naai kutty</div>
 
-            <!-- indicates dog position -->
-            <div class="marker red d-none"></div>
+        <!-- if you want to see the markers, remove d-none from them -->
+        <div class="marker red d-none"></div>
+        <div class="marker green d-none"></div>
+        <div class="marker blue d-none"></div>
 
-            <!-- indicates cursor position -->
-            <div class="marker green d-none"></div>
-
-            <!-- indicates dog's 'facing position'-->
-            <div class="marker blue d-none"></div>
-
-            <div class="dog">
-                <div class="body-wrapper">
-                    <div class="body img-bg"></div>
-                </div>
-                <div class="head-wrapper">
-                    <div class="head img-bg"></div>
-                </div>
-                <div class="leg-wrapper">
-                    <div class="leg one img-bg"></div>
-                </div>
-                <div class="leg-wrapper">
-                    <div class="leg two img-bg"></div>
-                </div>
-                <div class="leg-wrapper">
-                    <div class="leg three img-bg"></div>
-                </div>
-                <div class="leg-wrapper">
-                    <div class="leg four img-bg"></div>
-                </div>
-                <div class="tail-wrapper">
-                    <div class="tail img-bg"></div>
-                </div>
+        <div class="dog">
+            <div class="body-wrapper">
+                <div class="body img-bg"></div>
+            </div>
+            <div class="head-wrapper">
+                <div class="head img-bg"></div>
+            </div>
+            <div class="leg-wrapper">
+                <div class="leg one img-bg"></div>
+            </div>
+            <div class="leg-wrapper">
+                <div class="leg two img-bg"></div>
+            </div>
+            <div class="leg-wrapper">
+                <div class="leg three img-bg"></div>
+            </div>
+            <div class="leg-wrapper">
+                <div class="leg four img-bg"></div>
+            </div>
+            <div class="tail-wrapper">
+                <div class="tail img-bg"></div>
             </div>
         </div>
+    </div>
 
-        <div class="indicator"></div><script src="script.js"></script>
+    <div class="indicator"></div>
+    <script src="script.js"></script>
 </body>
 </html>
